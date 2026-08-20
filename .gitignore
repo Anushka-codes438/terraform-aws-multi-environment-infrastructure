@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Variable files
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+terraform-ec2.pub
