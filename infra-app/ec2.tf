@@ -2,7 +2,7 @@
 
 resource "aws_key_pair" "my-key-pair"{
     key_name = "${var.env}-my-infra-key"
-    public_key = file("terraform-ec2.pub")
+    public_key = file("${path.module}/terraform-ec2.pub")
 
     tags = {
         Environment = var.env
